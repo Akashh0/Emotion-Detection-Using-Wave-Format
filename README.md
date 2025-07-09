@@ -45,7 +45,7 @@ python src/predict.py --file data/test_sample.wav
 ### 1. ⚙️ Requirements
 
 ```bash
-python pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 ### Or
 
