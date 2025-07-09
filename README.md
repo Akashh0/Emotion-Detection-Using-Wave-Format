@@ -61,6 +61,7 @@ pip install -r requirements.txt
 
 Here’s a visual summary of the model's performance across different emotions:
 
-![Emotion Classification Results](sample_outputclassification%20reportpng)
+<img src="sample_output/classification report.png" alt="Emotion Classification Results" width="600"/>
 
 > 🎯 The graph shows high precision and recall for emotions like *Sad* and *Neutral*, with consistent accuracy across all categories.
+
