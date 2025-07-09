@@ -19,11 +19,6 @@ This project is a Machine Learning-based system that detects **emotions from raw
 
 ---
 
-## 📁 Project Structure
-
-
-
-
 ## 🧪 How It Works
 
 ### 1️⃣ Feature Extraction
@@ -44,3 +39,6 @@ Models used:
 Feed an audio sample to the model:
 ```bash
 python src/predict.py --file data/test_sample.wav
+
+## 🛠️ Installation
+### ⚙️ Requirements
