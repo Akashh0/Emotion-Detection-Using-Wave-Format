@@ -42,14 +42,14 @@ python src/predict.py --file data/test_sample.wav
 ```
 
 ## 🛠️ Installation
-### ⚙️ Requirements
+### 1. ⚙️ Requirements
 
 ```bash
 python pip install -r requirements.txt
 ```
 ### Or
 
-###🐍 Create a Virtual Environment
+### 2. 🐍 Create a Virtual Environment
 ```bash
 python python -m venv venv
 source venv/bin/activate # on macOS/Unix
