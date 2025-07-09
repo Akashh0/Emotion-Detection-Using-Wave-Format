@@ -1,120 +1,46 @@
-title: "🎙️ Emotion Recognition from Voice using Machine Learning"
+# 🎙️ Emotion Recognition from Voice using Machine Learning
 
-overview: >
-  A machine learning project to detect emotions directly from raw human voice recordings,
-  without requiring any speech-to-text conversion. The system extracts acoustic features
-  like MFCCs, pitch, energy, and classifies the input into emotional states like
-  happy, sad, angry, or neutral.
+## 😃🔊 Project Overview
 
-highlights:
-  - 🎧 Audio-only Emotion Detection (no transcription)
-  - 📊 MFCCs, Chroma, Spectral Contrast, Tonnetz
-  - 🧠 Models: SVM, MLP (and optionally CNN)
-  - 🌍 Language-agnostic and multilingual dataset support
-  - 📈 Real-time and batch prediction modes
-  - 🧪 Built-in visualizations and model evaluation
+This project is a Machine Learning-based system that detects **emotions from raw human voice recordings** — without relying on speech-to-text. By analyzing **acoustic features** such as pitch, MFCCs, tone, and spectrograms, the model classifies speech into emotional states like *happy, sad, angry, neutral*, and more.
 
-project_structure: |
-  emotion-voice-detector/
-  ├── data/
-  ├── features/
-  ├── models/
-  ├── notebooks/
-  ├── src/
-  │   ├── extract_features.py
-  │   ├── train_model.py
-  │   ├── predict.py
-  │   └── utils.py
-  ├── README.md
-  ├── requirements.txt
-  └── .gitignore
+> ⚡ Built to be **language-independent**, this system is ideal for real-time applications in **mental health monitoring**, **empathetic voice assistants**, and **customer service analytics**.
 
-how_it_works:
-  step_1:
-    title: "🎼 Feature Extraction"
-    details: >
-      Extract audio features using `librosa`, including MFCCs, Chroma, Tonnetz,
-      Spectral Contrast, ZCR, and Energy.
-  step_2:
-    title: "🧠 Model Training"
-    details: >
-      Train classification models like SVM or MLP on extracted features.
-      Optional extension to CNNs if spectrogram-based images are used.
-  step_3:
-    title: "🔍 Prediction"
-    command: "python src/predict.py --file data/sample.wav"
+---
 
-installation:
-  clone_repo: "git clone https://github.com/your-username/emotion-voice-detector.git"
-  setup_venv:
-    - "python -m venv venv"
-    - "source venv/bin/activate  # Linux/Mac"
-    - "venv\\Scripts\\activate   # Windows"
-  install_requirements: "pip install -r requirements.txt"
+## 🚀 Key Features
 
-sample_results:
-  - emotion: Happy
-    precision: 0.87
-    recall: 0.85
-    f1_score: 0.86
-  - emotion: Sad
-    precision: 0.90
-    recall: 0.92
-    f1_score: 0.91
-  - emotion: Angry
-    precision: 0.84
-    recall: 0.82
-    f1_score: 0.83
-  - emotion: Neutral
-    precision: 0.88
-    recall: 0.87
-    f1_score: 0.88
+- 🎧 **Audio-only Emotion Detection** (No transcription needed)
+- 📊 Feature extraction: **MFCCs, Chroma, Spectral Contrast, Tonnetz**
+- 🧠 Trained on multilingual emotional speech datasets
+- 🌍 Language-agnostic design
+- 📈 Supports real-time and batch predictions
+- 🧪 Includes test data and visualization scripts
 
-use_cases:
-  - 🎙️ Emotion-aware voice assistants
-  - 🧠 Mental health and stress detection
-  - 📞 Customer support analytics
-  - 🎮 Adaptive gaming & storytelling
+---
 
-gitignore: |
-  __pycache__/
-  *.py[cod]
-  venv/
-  ENV/
-  env/
-  .ipynb_checkpoints
-  *.wav
-  *.mp3
-  *.h5
-  *.pkl
-  *.joblib
-  *.npy
-  *.npz
-  *.csv
-  .DS_Store
-  Thumbs.db
+## 📁 Project Structure
 
-requirements: |
-  numpy
-  scipy
-  librosa
-  scikit-learn
-  matplotlib
-  pandas
-  seaborn
-  soundfile
-  joblib
-  jupyter
 
-license:
-  name: "MIT License"
-  note: "Feel free to use, modify, and distribute this project."
 
-credits:
-  developer: "Akash Krishnan M"
-  datasets:
-    - RAVDESS: "https://zenodo.org/record/1188976"
-    - CREMA-D
-    - TESS
 
-call_to_action: "🌟 Star this repo if you found it helpful!"
+## 🧪 How It Works
+
+### 1️⃣ Feature Extraction
+We extract acoustic features using `librosa`:
+- MFCC (Mel Frequency Cepstral Coefficients)
+- Chroma Frequencies
+- Spectral Contrast
+- Tonnetz
+- Zero Crossing Rate, Energy, etc.
+
+### 2️⃣ Model Training
+Models used:
+- SVM (Support Vector Machine)
+- MLP (Multi-Layer Perceptron)
+- Optionally: CNN for spectrograms
+
+### 3️⃣ Emotion Prediction
+Feed an audio sample to the model:
+```bash
+python src/predict.py --file data/test_sample.wav
