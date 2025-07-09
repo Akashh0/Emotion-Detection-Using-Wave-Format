@@ -39,6 +39,7 @@ Models used:
 Feed an audio sample to the model:
 ```bash
 python src/predict.py --file data/test_sample.wav
+```
 
 ## 🛠️ Installation
 ### ⚙️ Requirements
