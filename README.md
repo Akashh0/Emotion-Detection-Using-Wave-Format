@@ -65,3 +65,6 @@ Here’s a visual summary of the model's performance across different emotions:
 
 > 🎯 The graph shows high precision and recall for emotions like *Sad* and *Neutral*, with consistent accuracy across all categories.
 
+<img src="sample_output/RecordedAudioWaveform.jpg" alt="Emotion Classification Results" width="600"/>
+
+> 🎯 The above image represents the Realtime Wave-Form of Recorded audio, measured by Time / Seconds.
