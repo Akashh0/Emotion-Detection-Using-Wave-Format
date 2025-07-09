@@ -61,10 +61,20 @@ pip install -r requirements.txt
 
 Here’s a visual summary of the model's performance across different emotions:
 
+### 1. Classification Report
+
 <img src="sample_output/classification report.png" alt="Emotion Classification Results" width="600"/>
 
 > 🎯 The graph shows high precision and recall for emotions like *Sad* and *Neutral*, with consistent accuracy across all categories.
 
+### 2. Wave-Output
+
 <img src="sample_output/RecordedAudioWaveform.jpg" alt="Emotion Classification Results" width="600"/>
 
 > 🎯 The above image represents the Realtime Wave-Form of Recorded audio, measured by Time / Seconds.
+
+### 3. Prdeiction-Output
+
+<img src="sample_output/prediction output.png" alt="Emotion Classification Results" width="600"/>
+
+> 🎯 The above image represents the Emotion Detected after analysing the audio in realtime (live recorded audio)
