@@ -55,3 +55,12 @@ python -m venv venv
 source venv/bin/activate # on macOS/Unix
 venv\Scripts\activate # on Windows
 pip install -r requirements.txt
+```
+
+## 📊 Sample Results
+
+Here’s a visual summary of the model's performance across different emotions:
+
+![Emotion Classification Results](sample_outputclassification%20reportpng)
+
+> 🎯 The graph shows high precision and recall for emotions like *Sad* and *Neutral*, with consistent accuracy across all categories.
